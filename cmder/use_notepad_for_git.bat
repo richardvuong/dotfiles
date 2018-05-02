@@ -1,0 +1,1 @@
+FOR /F "usebackq tokens=2*" %%A IN (`REG QUERY "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\notepad++.exe" /ve`) DO git config --global core.editor "'%B' -multiInst -notabbar -nosession -noPlugin"
